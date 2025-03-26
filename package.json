@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
+    "knex": "tsx --no-warnings node_modules/knex/bin/cli.js",
     "lint": "eslint src --ext .ts --fix"
   },
   "keywords": [],
@@ -17,13 +18,14 @@
     "@types/node": "^22.13.10",
     "eslint": "^8.57.1",
     "globals": "^16.0.0",
+    "knex": "^3.1.0",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.1"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "fastify": "^5.2.1",
-    "knex": "^3.1.0",
     "sqlite3": "^5.1.7"
   }
 }
